@@ -62,6 +62,7 @@ public class HologramPlugin extends com.sainttx.holograms.api.HologramPlugin {
 
     // Sets up the entity controller
     private boolean setupController() {
+        System.out.println(NMS_PACKAGE_PATH);
         try {
             Class<?> nmsControllerClazz = Class.forName(NMS_PACKAGE_PATH + "HologramEntityControllerImpl");
             Constructor<?> constructor = nmsControllerClazz.getConstructor(com.sainttx.holograms.api.HologramPlugin.class);
